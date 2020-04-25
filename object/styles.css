@@ -1,0 +1,52 @@
+#sign-up {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+/* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    border-color: crimson;
+  }
+  
+  /* Hide all steps by default: */
+  .page {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: blue;
+  }
+  .image-preview {
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid lightgray;
+    margin-top: 15px;
+    
+    /* default text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: lightgray;
+  }
+  .image-preview__image {
+    display: none;
+    width: 100%;
+  }
