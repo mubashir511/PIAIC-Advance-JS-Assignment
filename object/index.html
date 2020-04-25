@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Object assignment</title>
+</head>
+
+<body>
+
+    <!-- form body -->
+    <div class="container p-5" id="formBody">
+        <div class="row mx-lg-n5">
+            <div class="col py-3 px-lg-5 border bg-light">
+                <h2 id="sign-up">SIGN UP</h2>
+                <p id="paragraph">
+                    Aunque a menudo se consideran nuevos fenómenos, las agencias surgieron por primera vez en la década
+                    de 1870 en el Reino Unido y los Estados Unidos como un medio para arbitrar y alentar la competencia
+                    económica en sectores como los ferrocarriles y la electricidad. Durante el siglo siguiente, las
+                    agencias crecieron poco a poco como organismos cuasigubernamentales diseñados para garantizar que se
+                    respetaran las leyes y normas, incluso en áreas como la "calidad" de la transmisión. Sin embargo, en
+                    la década de 1980, una década marcada por críticas neoliberales fundamentales sobre el papel de la
+                    autoridad pública en la economía y la sociedad, las agencias recibieron una nueva oportunidad de
+                    vida como un medio para promover la regulación de un número cada vez mayor de mercados y sectores.
+                </p>
+
+                <div class="col-md" id=page>
+                    <form id="regForm">
+                        <div class="col-md-6">
+                            <!-- page 1 -->
+                            <div class="page">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="First Name*" id="firstName">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Last Name*" id="lastName">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" placeholder="Email Address*" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" aria-describedby="password"
+                                        placeholder="Password*" id="password">
+                                    <small class="form-text text-muted">Password must be at least 8 character
+                                        long, including both numbers and letters. Feel free to include special character
+                                        too</small>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" aria-describedby="password"
+                                        placeholder="Confirm Password*" id="confirmPassword">
+                                </div>
+                            </div>
+
+                            <!-- page2 -->
+                            <div class="page">
+                                <div class="form-group">
+                                    <select class="form-control" id="nearestOffice">
+                                        <option disabled selected>Nearest Office*</option>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Address*" id="address1">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Address2*" id="address2">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="City*" id="city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="stateRelocation"><b>Where will you relocate to?</b></label>
+                                    <select multiple class="form-control" id="stateRelocation">
+                                        <option disabled selected>State*</option>
+                                        <option>Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>Arizona</option>
+                                        <option>Arkansas</option>
+                                    </select>
+                                    </br>
+                                    <select multiple class="form-control" id="countryRelocation">
+                                        <option disabled selected>Countries*</option>
+                                        <option>Afghanistan</option>
+                                        <option>Albania</option>
+                                        <option>Algeria</option>
+                                        <option>Andorra</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" placeholder="Post Code*" id="postCode">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" placeholder="Phone*" maxlength="11"
+                                        id="phone">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" placeholder="Mobile Phone*" maxlength="11"
+                                        id="mobile">
+                                </div>
+                            </div>
+
+                            <!-- page3 -->
+                            <div class="page">
+                                <div class="form-group">
+                                    <select class="form-control" id="categories">
+                                        <option disabled selected>Categories*</option>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Job Title*" id="jobTitle">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ask4relocate">Where will you relocate to?</label>
+                                    <select multiple class="form-control" id="ask4relocate">
+                                        <option selected>Montgomery, Ab</option>
+                                        <option>Juneau, Al</option>
+                                        <option>Phoenix, Ar</option>
+                                        <option>Denver, Co</option>
+                                        <option>Tallahassee, Fl</option>
+                                    </select>
+                                    </br>
+                                    <select multiple class="form-control" id="experience">
+                                        <option disabled selected>Years of Experience*</option>
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Countries">Contries Authorised to Work In</label>
+                                    <select class="form-control" id="authorisedCountries">
+                                        <option selected>Canada</option>
+                                        <option>Pakistan</option>
+                                        <option>India</option>
+                                        <option>Australia</option>
+                                        <option>USA</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Website*" id="website">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="age" oninput="adAge()">
+                                        <option selected>Ad Age</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="otherInfo">If you selected "others", please enter specific information
+                                        below</label>
+                                    <input type="email" class="form-control" id="otherInfo" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="uploadFile">Picture</label>
+                                    <input type="file" class="form-control-file" id="uploadFile" name="uploadFile">
+                                    <small id="uploadFileHelp" class="form-text text-muted">Upload your Profile
+                                        Picture</small>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsCheck">
+                                    <label class="form-check-label" for="termsCheck">I have read and agree to the
+                                        <b>Terms
+                                            and Conditions.</b></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- page4 "print all info" -->
+                        <div class="page">
+                            </br>
+                            <div class="table-responsive-md">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Name</th>
+                                            <td id="tableFullName"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Email</th>
+                                            <td id="tableEmail"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Address 1</th>
+                                            <td id="tableAddress1"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Address 2</th>
+                                            <td id="tableAddress2"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>City</th>
+                                            <td id="tableCity"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Nearest Office</th>
+                                            <td id="tableOffice"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Postal Code</th>
+                                            <td id="tablePostCode"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Phone</th>
+                                            <td id="tablePhone"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Mobiles</th>
+                                            <td id="tableMobile"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preferable Relocation</th>
+                                            <td id="tableRelocation1"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Job Title</th>
+                                            <td id="tableJobTitle"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Years of Eperience</th>
+                                            <td id="tableExperience"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Contries Authorised to Work In</th>
+                                            <td id="tableAuthorisedToWork"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Website</th>
+                                            <td id="tableWebsite"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Picture</th>
+                                            <td>
+                                                <div class="image-preview" id="imagePreview">
+                                                    <img src="" alt="Image Preview" class="image-preview__image"
+                                                        id="picture">
+                                                    <span class="image-preview__default-text">Image Preview</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <form id="regForm">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="certifyInfo">
+                                    <label class="form-check-label" for="certifyInfo">I hereby certify that the
+                                        above information is true and correct to the best of my knowledge </label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- buttons -->
+                        <div class="col-md-6">
+                            <div class="row justify-content-between">
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-outline-primary" id="nextBtn"
+                                        onclick="nextPrev(1)">Countinue</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-outline-danger" id="prevBtn"
+                                        onclick="nextPrev(-1)">Back</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Circles which indicates the steps of the form: -->
+                        <div style="text-align:center;margin-top:40px;">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var currentPage = 0; // Current page is set to be the first page (0)
+        showPage(currentPage); // Display the current page
+
+        function showPage(n) {
+            // This function will display the specified page of the form ...
+            //find the number of pages(x) avaliable
+            var x = document.getElementsByClassName("page");
+            x[n].style.display = "block";
+
+            // ... and fix the Previous/Next buttons:
+            //condition for the display of buttons(show/hide)
+            if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "inline";
+            }
+            //condition for the function of the buttons(submit/next)
+            if (n == (x.length - 1)) {
+                //remove the paragraph
+                var para = document.getElementById("paragraph");
+                para.remove()
+
+                // present collected data in form of table
+                showInfo()
+
+                document.getElementById("nextBtn").innerHTML = "Submit";
+            } else {
+                document.getElementById("nextBtn").innerHTML = "Next";
+            }
+            // ... and run a function that displays the correct step indicator:
+            fixStepIndicator(n)
+        }
+
+        function nextPrev(n) {
+            // This function will figure out which Page to display
+            var x = document.getElementsByClassName("page");
+
+            // Exit the function if any field in the current Page is invalid:
+            if (n == 1 && !validateForm()) return false;
+            // Hide the current Page:
+            x[currentPage].style.display = "none";
+            // Increase or decrease the current Page by 1:
+            currentPage = currentPage + n;
+            // if you have reached the end of the form... :
+            if (currentPage >= x.length) {
+                // save info before submiting the form 
+                saveInfo()
+                //...the form gets submitted:
+                document.getElementById("regForm").submit();
+                return false;
+            }
+            // Otherwise, display the correct Page:
+            showPage(currentPage);
+        }
+
+        function saveInfo() {
+            // object which get user given information from the form
+            var info = {
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value,
+
+                nearestOffice: document.getElementById("nearestOffice").value,
+                address1: document.getElementById("address1").value,
+                address2: document.getElementById("address2").value,
+                city: document.getElementById("city").value,
+                stateRelocation: document.getElementById("stateRelocation").value,
+                countryRelocation: document.getElementById("countryRelocation").value,
+                postCode: document.getElementById("postCode").value,
+                phone: document.getElementById("phone").value,
+                mobile: document.getElementById("mobile").value,
+
+                categories: document.getElementById("categories").value,
+                jobTitle: document.getElementById("jobTitle").value,
+                ask4relocate: document.getElementById("ask4relocate").value,
+                experience: document.getElementById("experience").value,
+                authorisedCountries: document.getElementById("authorisedCountries").value,
+                website: document.getElementById("website").value,
+                age: document.getElementById("age").value,
+                otherInfo: document.getElementById("otherInfo").value,
+                uploadFile: document.getElementById("uploadFile"),
+                termsCheck: document.getElementById("termsCheck").value,
+            }
+            return info
+        }
+
+        function showInfo() {
+            console.log(saveInfo())
+            document.getElementById("tableFullName").innerHTML = saveInfo().firstName + " " + saveInfo().lastName;
+            document.getElementById("tableEmail").innerHTML = saveInfo().email;
+
+            document.getElementById("tableAddress1").innerHTML = saveInfo().address1;
+            document.getElementById("tableAddress2").innerHTML = saveInfo().address2;
+            document.getElementById("tableCity").innerHTML = saveInfo().city;
+            document.getElementById("tableOffice").innerHTML = saveInfo().nearestOffice;
+            document.getElementById("tablePostCode").innerHTML = saveInfo().postCode;
+            document.getElementById("tablePhone").innerHTML = saveInfo().phone;
+            document.getElementById("tableMobile").innerHTML = saveInfo().mobile;
+            document.getElementById("tableRelocation1").innerHTML = saveInfo().stateRelocation + ", " + saveInfo().countryRelocation;
+
+            document.getElementById("tableJobTitle").innerHTML = saveInfo().jobTitle;
+            document.getElementById("tableExperience").innerHTML = saveInfo().experience;
+            document.getElementById("tableAuthorisedToWork").innerHTML = saveInfo().authorisedCountries;
+            document.getElementById("tableWebsite").innerHTML = saveInfo().website;
+
+        }
+
+        function adAge() {
+            if (currentPage === 2) {
+                // enable "pthers" input field
+                if (document.getElementById("age").value == "Others") {
+                    // enable input field if "Others" is selected
+                    document.getElementById("otherInfo").disabled = false;
+                    validateForm()
+                }
+                else {
+                    document.getElementById("otherInfo").disabled = true;
+                    validateForm()
+                }
+            }
+        }
+
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var x, y, i, z, c, valid = true;
+            x = document.getElementsByClassName("page");
+            y = x[currentPage].getElementsByTagName("input");
+            z = x[currentPage].getElementsByTagName("select");
+            console.log(z)
+
+            // A loop that checks every input field in the current Page:
+            for (i = 0; i < y.length; i++) {
+
+                // check page 3
+                if (currentPage == 2) {
+                    // check for ad Age 
+                    if (i == 2) {
+                        if (z[4].value === "Others" && y[i].value == "") {
+                            // add an "invalid" class to the field:
+                            y[i].className += " invalid";
+                            // and set the current valid status to false:
+                            valid = false;
+                        }
+                    }
+                    else {
+                        if (y[i].value == "" || (y[i].value == "on" && y[i].checked == false)) {
+                            // add an "invalid" class to the field:
+                            y[i].className += " invalid";
+                            // and set the current valid status to false:
+                            valid = false;
+                        }
+                    }
+                }
+                else {
+                    // If a field is empty...
+                    if (y[i].value == "" || (y[i].value == "on" && y[i].checked == false)) {
+                        // add an "invalid" class to the field:
+                        y[i].className += " invalid";
+                        // and set the current valid status to false:
+                        valid = false;
+                    }
+                }
+            }
+
+            //confirm passwords
+            if (document.getElementById("password").value !== document.getElementById("confirmPassword").value) {
+
+                // add an "invalid" class to the password fields:
+                y[3].className += " invalid"
+                y[4].className += " invalid"
+                // and set the current valid status to false:
+                valid = false;
+            }
+
+            // If the valid status is true, mark the step as finished and valid:
+            if (valid) {
+                document.getElementsByClassName("step")[currentPage].className += " finish";
+            }
+            return valid; // return the valid status
+        }
+
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("step");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class to the current step:
+            x[n].className += " active";
+        }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
